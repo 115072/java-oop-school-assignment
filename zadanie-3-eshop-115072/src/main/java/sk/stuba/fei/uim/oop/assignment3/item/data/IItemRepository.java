@@ -1,0 +1,11 @@
+package sk.stuba.fei.uim.oop.assignment3.item.data;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface IItemRepository extends JpaRepository<Item, Long> {
+    List<Item> findAll();
+}
